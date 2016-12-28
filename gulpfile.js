@@ -16,7 +16,7 @@ var path = {
     watch: { //Укажем, за изменением каких файлов мы хотим наблюдать
         html: 'app/*.html',
         scss: 'app/sass/**/*.scss',
-        css: 'app/css/media.css',
+        css: 'app/css/*.css',
         js: 'src/js/**/*.js'
     }
 };
@@ -31,7 +31,7 @@ gulp.task('scss', function () {
 
 gulp.task('browser-sync', function () { // Создаем таск browser-sync
     browserSync({ // Выполняем browserSync
-        proxy: "water_clean",
+        proxy: "water-clean",
         notify: true // Отключаем уведомления
     });
 });

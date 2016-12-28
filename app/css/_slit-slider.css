@@ -104,22 +104,13 @@
       background: rgba(255, 255, 255, 0.8); }
 
 .bg-img-1 {
-  background-image: url(../img/slider/glavn.jpg); }
+  background-image: url(../img/slider/banner.jpg); }
 
 .bg-img-2 {
-  background-image: url(../img/slider/promyshl.jpg); }
+  background-image: url(../img/slider/affinity.jpeg); }
 
 .bg-img-3 {
-  background-image: url(../img/slider/bolnitc.jpg); }
-
-.bg-img-4 {
-  background-image: url(../img/slider/napitk.jpg); }
-
-.bg-img-5 {
-  background-image: url(../img/slider/kafe.jpg); }
-
-.bg-img-6 {
-  background-image: url(../img/slider/pivovarnya.jpg); }
+  background-image: url(../img/slider/cinelli.jpeg); }
 
 /* Animations for content elements */
 .sl-trans-elems .caption-content h2 {
