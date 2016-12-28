@@ -547,7 +547,7 @@ ul.external {
 	Testimonials
 ==================================================================*/
 #testimonials {
-  background-image: url(../img/parallax/testimonial.jpg);
+  background-image: url(../img/parallax/water.jpg);
   padding: 0;
   color: #fff; }
   #testimonials .sec-title h2:after {
@@ -656,7 +656,7 @@ ul.external {
 	Price
 ==================================================================*/
 #social {
-  background-image: url(../img/slider/banner.jpg);
+  background-image: url(../img/slider/water.jpg);
   padding: 0; }
   #social .overlay {
     background: url("../img/slide_bg.png") repeat scroll 0 0 transparent;
