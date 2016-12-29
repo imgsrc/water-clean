@@ -204,7 +204,7 @@ main > section {
 #navigation {
   -webkit-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(36, 51, 67, 0.4);
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   padding: 5px 0; }
@@ -222,12 +222,14 @@ main > section {
       display: inline-block;
       position: absolute;
       top: -30px;
-      left: 75px; }
+      left: 75px;
+      width: 300px; }
       #navigation .navbar-brand .logo_text h3 {
         display: inline-block;
         font-family: Cambria, sans-serif;
         font-size: 30px;
-        color: #ffffff; }
+        color: #ffffff;
+        margin-bottom: 0; }
       #navigation .navbar-brand .logo_text p {
         font-size: 13px;
         color: #ffffff; }
@@ -689,29 +691,62 @@ ul.external {
 /*=================================================================
 	Contact
 ==================================================================*/
-.input-field {
-  margin-bottom: 10px; }
+#contact {
+  background-color: #50b3e5;
+  color: #ffffff; }
 
-.form-control {
-  border: 1px solid #ececec;
-  -webkit-border-radius: 0;
-          border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: #818181;
-  font-size: 16px;
-  height: 50px; }
-
-textarea.form-control {
-  width: 100%;
-  height: 165px; }
-
-#submit:hover {
-  color: #fff; }
-#submit:before {
-  background-color: #0A85BB; }
-#submit.btn-effect:after {
-  background: #2E2E2E; }
+.b_form {
+  background-color: #243343;
+  color: #97a4b2;
+  opacity: 0.8;
+  outline: 10px solid rgba(255, 255, 255, 0.2);
+  padding: 30px; }
+  .b_form .input-field {
+    margin-bottom: 10px; }
+  .b_form .form-control {
+    background-color: #34465a;
+    border: medium none;
+    -webkit-box-shadow: 0 -3px #1f2a36;
+            box-shadow: 0 -3px #1f2a36;
+    color: #fff;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1em;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    padding: 10px 0;
+    text-indent: 10px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    margin-bottom: 20px; }
+    .b_form .form-control:focus, .b_form .form-control:hover {
+      background-color: #394e65;
+      -webkit-box-shadow: 0 -5px #1f2a36;
+              box-shadow: 0 -5px #1f2a36;
+      outline: 0 none; }
+  .b_form textarea.form-control {
+    width: 100%;
+    height: 165px; }
+  .b_form #submit {
+    color: #fff;
+    font-size: 0.875em;
+    font-weight: 700;
+    padding: 12px 20px;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-left: auto;
+    margin-right: auto; }
+    .b_form #submit:hover {
+      color: #fff; }
+    .b_form #submit:before {
+      background-color: #0A85BB; }
+    .b_form #submit.btn-effect:after {
+      background: #2E2E2E; }
+  .b_form .name {
+    display: inline-block;
+    width: 49%;
+    margin-right: 5px; }
+  .b_form .phone {
+    display: inline-block;
+    width: 49%; }
 
 .contact-details h3 {
   border-bottom: 1px solid #008ecc;
@@ -720,98 +755,57 @@ textarea.form-control {
   padding-bottom: 15px;
   text-transform: uppercase; }
 .contact-details p {
-  line-height: 30px; }
+  line-height: 30px;
+  font-size: 18px; }
   .contact-details p i {
     margin-right: 10px; }
 .contact-details span {
   display: block;
   margin-left: 24px; }
-
-/*============================================================
-	Google Maps
-==============================================================*/
-#google-map {
-  padding: 0; }
-
-#map-canvas {
-  width: 100%;
-  height: 300px; }
+.contact-details a {
+  color: #ffffff;
+  text-decoration: underline; }
 
 /*============================================================
 	Footer
 ==============================================================*/
 #footer {
-  background-color: #2E2E2E;
-  padding: 70px 0;
-  color: #fff; }
-
-.footer-content {
-  width: 390px;
-  margin: 0 auto; }
-  .footer-content > div {
-    margin-bottom: 40px; }
-    .footer-content > div > p:first-child {
-      margin-bottom: 15px;
-      text-transform: uppercase; }
-
-.subscribe-form {
+  background-color: #243343;
+  color: #fff;
+  padding: 30px 0 20px;
   position: relative; }
-
-.subscribe.form-control {
-  background-color: transparent;
-  border: 1px solid #7f7f7f; }
-  .subscribe.form-control:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
-
-.submit-icon {
-  background-color: #7f7f7f;
-  border: 0 none;
-  -webkit-border-radius: 0;
-          border-radius: 0;
-  color: #c1c1c1;
-  padding: 13px 20px;
-  position: absolute;
-  overflow: hidden;
-  right: 0;
-  top: 0; }
-  .submit-icon .fa-paper-plane {
-    position: relative;
-    top: 0;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-    -webkit-transition: all 0.3s ease 0.2s;
-    transition: all 0.3s ease 0.2s; }
-  .submit-icon:hover .fa-paper-plane {
-    position: relative;
-    top: -37px;
-    -webkit-transform: translateX(30px);
-    -ms-transform: translateX(30px);
-    transform: translateX(30px); }
-
-.footer-content .footer-social {
-  margin: 40px 0 35px; }
-
-.footer-social ul {
-  list-style: outside none none;
-  margin: 0;
-  padding: 0;
-  text-align: center; }
-  .footer-social ul li {
+  #footer .adress {
+    display: block;
+    font-size: 0.875em;
+    padding: 5px 0 0; }
+  #footer a {
+    color: #ffffff;
+    text-decoration: underline; }
+  #footer p {
+    border-bottom: 1px solid #fff;
     display: inline-block;
-    margin: 0 10px; }
-    .footer-social ul li a {
-      color: #7f7f7f;
-      display: block;
-      -webkit-transition: all 0.2s ease 0s;
-      transition: all 0.2s ease 0s; }
-      .footer-social ul li a:hover {
-        color: #009EE3; }
-
-.footer-content > p {
-  color: #ababab;
-  font-size: 12px; }
+    margin: 0 0 6px;
+    text-transform: uppercase;
+    font-size: 1.125em; }
+  #footer .work_time-wraper {
+    margin-left: 54px; }
+    #footer .work_time-wraper .work_time {
+      font-size: 0.875em;
+      padding: 5px 0 0; }
+  #footer .text-right {
+    text-align: right; }
+    #footer .text-right .bottom-phone {
+      font-family: "Roboto Condensed",sans-serif;
+      font-size: 1.1875em; }
+    #footer .text-right .bottom-email {
+      font-size: 0.875em; }
+  #footer h6 {
+    display: inline-block;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 0.875em;
+    margin: 0;
+    padding-top: 32px;
+    text-transform: none; }
 
 /*============================================================
 	Responsive Styles
