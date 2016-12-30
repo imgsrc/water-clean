@@ -450,10 +450,10 @@ main > section {
   color: #fff; }
 
 .service-icon i {
-  -webkit-transform: rotate(-48deg);
-  -ms-transform: rotate(-48deg);
-  transform: rotate(-48deg);
-  height: 48px;
+  -webkit-transform: rotate(48deg);
+  -ms-transform: rotate(48deg);
+  transform: rotate(24deg);
+  font-size: 45px;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased; }
 
@@ -977,3 +977,13 @@ ul.external {
   /* footer */
   .footer-content {
     width: 380px; } }
+
+@media only screen and (max-width: 360px) {
+  #navigation .navbar-brand .logo_text {
+    display: none; }
+  #home-slider .caption-content h1 {
+    font-size: 2.5em; }
+  footer .work_time-wraper {
+    margin: 20px; }
+  footer .text-right {
+    text-align: left !important; } }
